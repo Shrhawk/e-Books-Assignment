@@ -1,0 +1,8 @@
+from environs import Env
+
+env = Env()
+env.read_env()
+
+eBOOKS_DATABASE_URL = env("eBOOKS_DATABASE_URL")
+TEST_eBOOKS_DATABASE_URL = env("TEST_eBOOKS_DATABASE_URL")
+ASYNC_TEST_eBOOKS_DATABASE_URL = env("ASYNC_TEST_eBOOKS_DATABASE_URL")
